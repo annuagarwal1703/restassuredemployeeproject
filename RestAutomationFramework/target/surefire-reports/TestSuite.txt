@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 42, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 8.836 sec <<< FAILURE! - in TestSuite
+CheckResponseTime(com.employeeapi.testcases.TC_002_GetSingleEmployee)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at com.employeeapi.testcases.TC_002_GetSingleEmployee.CheckResponseTime(TC_002_GetSingleEmployee.java:53)
+
+CheckResponseBody(com.employeeapi.testcases.TC_004_UpdateRecord)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.employeeapi.testcases.TC_004_UpdateRecord.CheckResponseBody(TC_004_UpdateRecord.java:42)
+
+CheckResponseBody(com.employeeapi.testcases.TC_005_DeleteRecord)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.employeeapi.testcases.TC_005_DeleteRecord.CheckResponseBody(TC_005_DeleteRecord.java:40)
+

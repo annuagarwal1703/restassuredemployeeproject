@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [EmployeeRestAPISuite]">
+  <test thread-count="5" verbose="0" name="EmployeesRESTApi(failed)">
+    <classes>
+      <class name="com.employeeapi.testcases.TC_002_GetSingleEmployee">
+        <methods>
+          <include name="CheckResponseTime"/>
+          <include name="setup"/>
+          <include name="getEmpData"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC_002_GetSingleEmployee -->
+      <class name="com.employeeapi.testcases.TC_005_DeleteRecord">
+        <methods>
+          <include name="CheckResponseBody"/>
+          <include name="setup"/>
+          <include name="TearDown"/>
+          <include name="DeleteEmpData"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC_005_DeleteRecord -->
+      <class name="com.employeeapi.testcases.TC_004_UpdateRecord">
+        <methods>
+          <include name="UpdateEmpData"/>
+          <include name="setup"/>
+          <include name="TearDown"/>
+          <include name="CheckResponseBody"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC_004_UpdateRecord -->
+    </classes>
+  </test> <!-- EmployeesRESTApi(failed) -->
+</suite> <!-- Failed suite [EmployeeRestAPISuite] -->
